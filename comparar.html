@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comparar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Programação e Operação</title>
+</head>
+<body>
+
+    <header>
+        <div class="center">
+
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="logo-voanet.svg" alt="">
+                </div><!--logo-->
+                <div class="menu">
+                    <a href="Alterar.html">Alterar Protocolo</a>
+                    <a href="index.html">Roteirizador</a>
+                    <a href="links.html">Links</a>
+                    <a href="remover.html">Removedor de Protocolo</a>
+                    <a href="">Comparador de Protocolo</a>
+                </div><!--menu-->
+
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="mobile">
+                        <a href="Alterar.html">Alterar Protocolo</a>
+                        <a href="index.html">Roteirizador</a>
+                        <a href="links.html">Links</a>
+                        <a href="remover.html">Removedor de Protocolo</a>
+                        <a href="">Comparador de Protocolo</a>
+
+                    </div><!--mobile-->
+
+                </div><!--menu-mobile-->
+            </div><!--cabecalho-->
+        </div><!--center-->
+    </header>
+
+    <section class="banner-central">
+        <div class="center">
+            <div class="contra-capa">
+                <div class="fundo-preto"> 
+                    <p>Aqui será feita a comparação de dois blocos de protocolos afim de encontrar possível protocolos duplicados.</p>
+                </div><!--fundo-preto-->
+                <div class="banner">
+                </div><!--banner-->
+            </div><!--contra-capa-->
+
+        </div><!--center-->
+    </section><!--banner-central-->
+
+    <section class="comparar">
+        <div class="centro">
+            <div class="comparar-prot">
+                <h2>Comparador de Protocolos</h2>
+                <p>Insira informações dos protocolos que serão comparados nos dois primeiros blocos, após inserir as informações clique no botão "Comparar", com isso será listado no terceiro bloco os protocolos que forem diferentes contidos nos blocos anteriores. </p>
+
+                    <textarea id="protocolos1" rows="10" cols="30" placeholder="Escreva os protocolos aqui..."></textarea>
+                    <textarea id="protocolos2" rows="10" cols="30" placeholder="Escreva os protocolos aqui..."></textarea>
+                    <textarea id="resultados" rows="10" cols="30" class="area" readonly placeholder="Protocolos diferentes serão listados aqui..."></textarea>
+                    <button onclick="compararProtocolos()">Comparar</button>
+                    <button id="copiarButton" onclick="copiarProtocolos()">Copiar Protocolos</button>
+                
+            </div><!--remover-prot-->
+        </div>
+
+    </section><!--remover-->
+
+    <footer>
+        <div class="center">   
+            <div class="rodape">
+                <img src="logo-voanet.svg" alt="">
+                <span>© 2024 ARILSON BARBOSA</span>
+            </div><!--rodape-->
+
+        </div><!--center-->
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

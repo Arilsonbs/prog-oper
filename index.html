@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Programação e Operação</title>
+</head>
+<body>
+
+    <header>
+        <div class="center">
+
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="logo-voanet.svg" alt="">
+                </div><!--logo-->
+                <div class="menu">
+                    <a href="Alterar.html">Alterar Protocolo</a>
+                    <a href="">Roteirizador</a>
+                    <a href="links.html">Links</a>
+                    <a href="remover.html">Removedor de Protocolo</a>
+                    <a href="comparar.html">Comparador de Protocolo</a>
+                </div><!--menu-->
+
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="mobile">
+                        <a href="Alterar.html">Alterar Protocolo</a>
+                        <a href="">Roteirizador</a>
+                        <a href="links.html">Links</a>
+                        <a href="remover.html">Removedor de Protocolo</a>
+                        <a href="comparar.html">Comparador de Protocolo</a>
+
+                    </div><!--mobile-->
+
+                </div><!--menu-mobile-->
+            </div><!--cabecalho-->
+        </div><!--center-->
+    </header>
+
+    <section class="banner-central">
+        <div class="center">
+            <div class="contra-capa">
+                <div class="fundo-preto"> 
+                    <p> Nesta etapa o sistema irá coletar as informações de locais de cada solicitação, logo após será divida por blocos referentes a cada localidade buscando uma maior eficiência logistica.</p>
+
+                </div><!--fundo-preto-->
+                <div class="banner">
+                </div><!--banner-->
+            </div><!--contra-capa-->
+
+        </div><!--center-->
+    </section><!--banner-central-->
+
+    <section class="roteirO">
+        <div class="centro">
+            <div class="roteiro-prot">
+                <h2>Roteirizador</h2>
+                <p>Adicione a lista de protocolos que serão usadas para a construção do roteiro logistico de cada equipe e no primeiro bloco, logo após clique em Gerar roteiro, será feita a separação de cada solicitação por localidade de cada atendimento.
+                    Veja que os outros blocos foram preenchidos com alguns protocolos, clique copiar abaixo de cada um deles e cole para cada equipe disponível para o agendamento conforme separação logistica </p>
+
+                <textarea placeholder="Cole os Protocolos Aqui" id="inputTextarea" rows="10" cols="50"></textarea>
+                <textarea placeholder="Roteiro 1" id="outputTextarea1" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 2" id="outputTextarea2" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 3" id="outputTextarea3" rows="10" cols="50" readonly></textarea>
+                <button onclick="filtrarLinhas()">Gerar Roteiro</button>
+                <button id="btnCopiar1" onclick="copiarTexto('outputTextarea1', 'btnCopiar1')">Copiar</button>
+                <button id="btnCopiar2" onclick="copiarTexto('outputTextarea2', 'btnCopiar2')">Copiar</button>
+                <button id="btnCopiar3" onclick="copiarTexto('outputTextarea3', 'btnCopiar3')">Copiar</button>
+                <textarea placeholder="Roteiro 4" id="outputTextarea4" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 5" id="outputTextarea5" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 6" id="outputTextarea6" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 7" id="outputTextarea7" rows="10" cols="50" readonly></textarea>
+                <button id="btnCopiar4" onclick="copiarTexto('outputTextarea4', 'btnCopiar4')">Copiar</button>
+                <button id="btnCopiar5" onclick="copiarTexto('outputTextarea5', 'btnCopiar5')">Copiar</button>
+                <button id="btnCopiar6" onclick="copiarTexto('outputTextarea6', 'btnCopiar6')">Copiar</button>
+                <button id="btnCopiar7" onclick="copiarTexto('outputTextarea7', 'btnCopiar7')">Copiar</button>
+                <textarea placeholder="Roteiro 8" id="outputTextarea8" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 9" id="outputTextarea9" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 10" id="outputTextarea10" rows="10" cols="50" readonly></textarea>
+                <textarea placeholder="Roteiro 11" id="outputTextarea11" rows="10" cols="50" readonly></textarea>
+                <button id="btnCopiar8" onclick="copiarTexto('outputTextarea8', 'btnCopiar8')">Copiar</button>
+                <button id="btnCopiar9" onclick="copiarTexto('outputTextarea9', 'btnCopiar9')">Copiar</button>
+                <button id="btnCopiar10" onclick="copiarTexto('outputTextarea10', 'btnCopiar10')">Copiar</button>
+                <button id="btnCopiar11" onclick="copiarTexto('outputTextarea11', 'btnCopiar11')">Copiar</button>
+                
+                
+            </div><!--remover-prot-->
+        </div>
+
+        <div class="bfinal">
+            <button onclick="limparTextareas()">Limpar Todos</button>
+        </div>
+
+    </section><!--roteiro-->
+
+
+    <footer>
+        <div class="center">   
+            <div class="rodape">
+                <img src="logo-voanet.svg" alt="">
+                <span>© 2024 ARILSON BARBOSA</span>
+            </div><!--rodape-->
+
+        </div><!--center-->
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

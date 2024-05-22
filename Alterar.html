@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Alterar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Programação e Operação</title>
+</head>
+<body>
+
+    <header>
+        <div class="center">
+
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="logo-voanet.svg" alt="">
+                </div><!--logo-->
+                <div class="menu">
+                    <a href="">Alterar Protocolo</a>
+                    <a href="index.html">Roteirizador</a>
+                    <a href="links.html">Links</a>
+                    <a href="remover.html">Removedor de Protocolo</a>
+                    <a href="comparar.html">Comparador de Protocolo</a>
+                </div><!--menu-->
+
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="mobile">
+                        <a href="">Alterar Protocolo</a>
+                        <a href="index.html">Roteirizador</a>
+                        <a href="links.html">Links</a>
+                        <a href="remover.html">Removedor de Protocolo</a>
+                        <a href="comparar.html">Comparador de Protocolo</a>
+
+                    </div><!--mobile-->
+
+                </div><!--menu-mobile-->
+            </div><!--cabecalho-->
+        </div><!--center-->
+    </header>
+
+    <section class="banner-central">
+        <div class="center">
+            <div class="contra-capa">
+                <div class="fundo-preto"> 
+                    <p>Esta aplicação permite que os atendimentos registrados no nosso sistema sejam alterados de forma automática. 
+                        Os protocolos serão alterados para o formato/modelo usado no agendamento das solicitações.</p>
+                </div><!--fundo-preto-->
+                <div class="banner">
+                </div><!--banner-->
+            </div><!--contra-capa-->
+
+        </div><!--center-->
+    </section><!--banner-central-->
+
+    <section class="alterar">
+        <div class="centro">
+            <div class="alterar-prot">
+                <h2>Alterador de Protocolos</h2>
+                <p>Copie os protocolos das solicitações listadas no "SIGA", após cole os protocolos e clique no botão "Alterar Protocolo", logo em seguida clique em "Copiar" para obter os protocolos com as informações alteradas</p>
+
+                <textarea placeholder="Cole os protocolos aqui" id="inputText" rows="10" cols="50"></textarea>
+                <textarea placeholder="Protocolos alterados" id="outputText" rows="10" cols="50" readonly></textarea>
+                <button onclick="transformText()">Alterar Protocolos</button>
+                <button id="copyButton" onclick="copyText()">Copiar</button>
+                
+            </div><!--alterar-prot-->
+        </div>
+
+    </section><!--alterar-->
+
+    <footer>
+        <div class="center">   
+            <div class="rodape">
+                <img src="logo-voanet.svg" alt="">
+                <span>© 2024 ARILSON BARBOSA</span>
+            </div><!--rodape-->
+
+        </div><!--center-->
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
