@@ -1,6 +1,6 @@
 //Codigo do menu
 
-var menuBtn = document.querySelector('.menu-mobile i');
+var menuBtn = document.querySelector('.menu-mobile img');
 menuBtn.addEventListener('click', ()=>{
     let itensMenu = document.querySelector('.mobile');
     if(itensMenu.classList.contains('show')){

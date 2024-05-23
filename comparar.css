@@ -68,9 +68,10 @@
     
 }
 
-.menu-mobile i{
+.menu-mobile img{
     font-size: 30px;
     cursor: pointer;
+    width: 40px;
 }
 
 

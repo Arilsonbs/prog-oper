@@ -68,10 +68,12 @@
     
 }
 
-.menu-mobile i{
+.menu-mobile img{
     font-size: 30px;
     cursor: pointer;
+    width: 40px;
 }
+
 
 
 /*section 1: banner */
@@ -157,8 +159,10 @@
 
 }
 
-.planilhas i , .outroslinks i{
+.planilhas img , .outroslinks img {
     padding-right: 5px;
+    width: 26px;
+    margin-bottom: -5px;
     
 }
 
@@ -192,7 +196,6 @@
     margin: 0 auto;
     box-shadow: 3px 4px grey ;
     font-weight: bold;
-
     
 
 }
