@@ -214,6 +214,7 @@ function extrairEcopiarProtocolos() {
                 '(Tecnica) Configuração de roteador sem visita':'CR',
                 '(Tecnica) Instalação - TV - PF':'ITV',
                 '(Tecnica) Análise de TV - PF':'ANT',
+                'Problema em site ou equipamento específico':"SE"
 
 
 
