@@ -130,6 +130,7 @@ function extrairEcopiarProtocolos() {
                 '(Tecnica) Sem acesso - Rádio - PJ':'SA-PJ',
                 'Sem acesso - Fibra':'SA',
                 'Sem acesso - Cabo':'SA',
+                'Sem acesso - Rádio':'SA',
                 'Lentidão - Fibra':'IL',
                 'Lentidão - Cabo':'IL',
                 'Lentidão - Rádio':'IL',
@@ -214,7 +215,8 @@ function extrairEcopiarProtocolos() {
                 '(Tecnica) Configuração de roteador sem visita':'CR',
                 '(Tecnica) Instalação - TV - PF':'ITV',
                 '(Tecnica) Análise de TV - PF':'ANT',
-                'Problema em site ou equipamento específico':"SE"
+                'Problema em site ou equipamento específico':"SE",
+                'Upgrade':'UPG'
 
 
 
@@ -297,22 +299,22 @@ function filtrarLinhas() {
         else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('BAIRRO DA PAZ')) {
             resultado2.push(line);
         }
-        else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('CENTRO - CA')) {
+        else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
             resultado3.push(line);
         }
-        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('JABEQUARA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
+        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
             resultado4.push(line);
         }
         else if (line.includes('NOVA CANDEIAS') || line.includes('SÃO FRANCISCO')  || line.includes('DISTRITO INDUSTRIAL') || line.includes('DOM AVELAR') || line.includes('CONDOMINIO') || line.includes('FAZENDA MAMÃO')) {
             resultado5.push(line);
         }
-        else if (line.includes('CAROBA') || line.includes('MENINO JESUS') || line.includes('PASSAGEM DOS TEIXEIRAS') || line.includes('MADEIRA') || line.includes('COLONIA') || line.includes('CEDRO') || line.includes('PASTO DE FORA') || line.includes('POSTO SANCA') || line.includes('BOCA DA MATA')) {
+        else if (line.includes('CAROBA') || line.includes('MENINO JESUS') || line.includes('PASSAGEM DOS TEIXEIRAS') || line.includes('CABOTO') || line.includes('MADEIRA') || line.includes('COLONIA') || line.includes('CEDRO') || line.includes('PASTO DE FORA') || line.includes('POSTO SANCA') || line.includes('BOCA DA MATA')) {
             resultado6.push(line);
         }
-        else if (line.includes('JANGADA') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('JAIME MENEZES') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
-            resultado7.push(line);
+        else if (line.includes('JANGADA') || line.includes('URBIS III') || line.includes('AGOSTINHO AMARAL') || line.includes('URBIS-SSP') || line.includes('URBIS IV') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('JAIME MENEZES') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
+            resultado7.push(line) ;
         } 
-        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
+        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
             resultado8.push(line);
         }
         else if (line.includes('SANTO ANTONIO') || line.includes('SARANDY') || line.includes('SANTO ANTÔNIO')) {
