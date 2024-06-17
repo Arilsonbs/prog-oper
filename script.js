@@ -293,7 +293,7 @@ function filtrarLinhas() {
     // Itera sobre cada linha
     lines.forEach(line => {
         // Verifica e separa conforme os critérios
-        if (line.includes('PITANGA') || line.includes('NOVA BRASILIA') || line.includes('NOVA BRASÍLIA') || line.includes('MONTE') || line.includes('MURIBECA') || line.includes('SOCORRO') || line.includes('SANTA CLARA')) {
+        if (line.includes('PITANGA') || line.includes('NOVA BRASILIA') ||  line.includes('NOVA BRASÍLIA') || line.includes("MALEMBA DE BAIXO") || line.includes('MONTE') || line.includes('MURIBECA') || line.includes('SOCORRO') || line.includes('SANTA CLARA')) {
             resultado1.push(line);
         }
         else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('BAIRRO DA PAZ')) {
@@ -302,7 +302,7 @@ function filtrarLinhas() {
         else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
             resultado3.push(line);
         }
-        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
+        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
             resultado4.push(line);
         }
         else if (line.includes('NOVA CANDEIAS') || line.includes('SÃO FRANCISCO')  || line.includes('DISTRITO INDUSTRIAL') || line.includes('DOM AVELAR') || line.includes('CONDOMINIO') || line.includes('FAZENDA MAMÃO')) {
