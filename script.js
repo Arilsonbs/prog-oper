@@ -43,7 +43,7 @@ function extrairEcopiarProtocolos() {
     document.getElementById('inputTexto').value = ''; // Limpar o textarea
 
     const botaoExtrair = document.getElementById('botaoExtrair');
-    botaoExtrair.style.backgroundColor = 'green';
+    botaoExtrair.style.backgroundColor = '#59cbe8';
     botaoExtrair.innerText = 'Protocolos Copiados';
     
     setTimeout(() => {
@@ -99,7 +99,7 @@ function extrairEcopiarProtocolos() {
 
             // Mudar a cor do botão e exibir mensagem de cópia
             const copiarButton = document.getElementById('copiarButton');
-            copiarButton.style.backgroundColor = 'green';
+            copiarButton.style.backgroundColor = '#59cbe8';
             copiarButton.textContent = 'Protocolos copiados';
 
             // Limpar o conteúdo do terceiro textarea
@@ -257,7 +257,7 @@ function extrairEcopiarProtocolos() {
 
             // Mudar a cor do botão e o texto
             const copyButton = document.getElementById('copyButton');
-            copyButton.style.backgroundColor = 'green';
+            copyButton.style.backgroundColor = '#59cbe8';
             copyButton.textContent = 'Protocolos copiados';
 
             // Voltar ao estado original após 5 segundos
@@ -296,7 +296,7 @@ function filtrarLinhas() {
         if (line.includes('PITANGA') || line.includes('NOVA BRASILIA') ||  line.includes('NOVA BRASÍLIA') || line.includes("MALEMBA DE BAIXO") || line.includes('MONTE') || line.includes('MURIBECA') || line.includes('SOCORRO') || line.includes('SANTA CLARA')) {
             resultado1.push(line);
         }
-        else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('BAIRRO DA PAZ')) {
+        else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes('BAIRRO DA PAZ')) {
             resultado2.push(line);
         }
         else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
@@ -314,7 +314,7 @@ function filtrarLinhas() {
         else if (line.includes('JANGADA') || line.includes('URBIS III') || line.includes('AGOSTINHO AMARAL') || line.includes('URBIS-SSP') || line.includes('URBIS IV') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('JAIME MENEZES') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
             resultado7.push(line) ;
         } 
-        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
+        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('BOSQUE')|| line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
             resultado8.push(line);
         }
         else if (line.includes('SANTO ANTONIO') || line.includes('SARANDY') || line.includes('SANTO ANTÔNIO')) {

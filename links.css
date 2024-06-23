@@ -6,7 +6,7 @@
 }
 
 :root{
-    --cp:#242c32;
+    --cp:#11111f;
 }
 
 .center{
@@ -73,8 +73,6 @@
     cursor: pointer;
     width: 40px;
 }
-
-
 
 /*section 1: banner */
 

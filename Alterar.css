@@ -6,7 +6,7 @@
 }
 
 :root{
-    --cp:#242c32;
+    --cp:#11111f;
 }
 
 .center{
@@ -139,7 +139,7 @@ footer{
     padding-top: 100px;
     text-align: center;
     margin: 0 auto;
-    background-color:  rgb(230, 230, 230);
+    
     padding-bottom: 30px;
 }
 .alterar-prot p{
@@ -153,12 +153,13 @@ footer{
 
 .alterar-prot textarea{
     width: 35%;
-    min-height: 450px;
+    min-height: 600px;
     resize: none;
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 10px;
-    background-color:  rgb(230, 230, 230);;
+    font-size: 16px;
+  
     
 }
 .alterar-prot button{
@@ -166,7 +167,7 @@ footer{
     margin-top: 20px;
     display: block;
     height: 50px;
-    width: 300px;
+    width: 250px;
     background-color:var(--cp);
     border-radius: 10px;
     color: white;

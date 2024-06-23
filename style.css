@@ -6,7 +6,7 @@
 }
 
 :root{
-    --cp:#242c32;
+    --cp:#11111f;
 }
 
 .center{
@@ -142,7 +142,7 @@ footer{
     padding-top: 100px;
     text-align: center;
     margin: 0 auto;
-    background-color:  rgb(230, 230, 230);
+   
     
    
 }
@@ -162,7 +162,8 @@ footer{
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 10px;
-    background-color:  rgb(230, 230, 230);;
+  
+    font-size: 16px;
     
 }
 .roteiro-prot button{
@@ -185,7 +186,7 @@ footer{
 }
 
 .bfinal{
-    background-color: rgb(230, 230, 230);
+   
     text-align: center;
 }
 

@@ -6,7 +6,7 @@
 }
 
 :root{
-    --cp:#242c32;
+    --cp:#11111f;
 }
 
 .center{
@@ -142,7 +142,6 @@ footer{
     padding-top: 100px;
     text-align: center;
     margin: 0 auto;
-    background-color:  rgb(230, 230, 230);
     padding-bottom: 30px;
    
 }
@@ -156,13 +155,13 @@ footer{
 }
 
 .remover textarea{
-    width: 75%;
-    min-height: 450px;
+    width: 70%;
+    min-height: 600px;
     resize: none;
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 10px;
-    background-color:  rgb(230, 230, 230);;
+    font-size: 16px;
     
 }
 .remover-prot button{
@@ -170,7 +169,7 @@ footer{
     margin-top: 20px;
     display: block;
     height: 50px;
-    width: 300px;
+    width: 250px;
     background-color:var(--cp);;
     border-radius: 10px;
     color: white;
