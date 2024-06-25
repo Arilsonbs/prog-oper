@@ -110,10 +110,13 @@
 
 /*section 2: links */
 
+
+
 .linkgeral{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    min-height: 500px;
     text-align: center;
     justify-items: top;
     background-image: url(./Images/Sem\ Título-1.png);
