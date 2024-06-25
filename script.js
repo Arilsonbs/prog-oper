@@ -296,25 +296,27 @@ function filtrarLinhas() {
         if (line.includes('PITANGA') || line.includes('NOVA BRASILIA') ||  line.includes('NOVA BRASÍLIA') || line.includes("MALEMBA DE BAIXO") || line.includes('MONTE') || line.includes('MURIBECA') || line.includes('SOCORRO') || line.includes('SANTA CLARA')) {
             resultado1.push(line);
         }
+        else if (line.includes('JANGADA') || line.includes('URBIS III') || line.includes('CARIRI') || line.includes('MARIO CRUZ') || line.includes('PATRICIO DOREA') || line.includes('AGOSTINHO AMARAL') || line.includes('PENAO') || line.includes('VIVENDA DO PASSE') || line.includes('URBIS-SSP') || line.includes('URBIS IV') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('JULIO SILVA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('FAZENDA CONCEICAO') || line.includes('FAZENDA CONCEIÇÃO') || line.includes('JAIME MENEZES') || line.includes('FAZENDA PARÁ') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('PENÃO') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
+            resultado7.push(line) ;
+        } 
+        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
+            resultado4.push(line);
+        }
         else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes('BAIRRO DA PAZ')) {
             resultado2.push(line);
         }
         else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
             resultado3.push(line);
         }
-        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
-            resultado4.push(line);
-        }
+
         else if (line.includes('NOVA CANDEIAS') || line.includes('SÃO FRANCISCO')  || line.includes('DISTRITO INDUSTRIAL') || line.includes('DOM AVELAR') || line.includes('CONDOMINIO') || line.includes('FAZENDA MAMÃO')) {
             resultado5.push(line);
         }
         else if (line.includes('CAROBA') || line.includes('MENINO JESUS') || line.includes('PASSAGEM DOS TEIXEIRAS') || line.includes('CABOTO') || line.includes('MADEIRA') || line.includes('COLONIA') || line.includes('CEDRO') || line.includes('PASTO DE FORA') || line.includes('POSTO SANCA') || line.includes('BOCA DA MATA')) {
             resultado6.push(line);
         }
-        else if (line.includes('JANGADA') || line.includes('URBIS III') || line.includes('AGOSTINHO AMARAL') || line.includes('URBIS-SSP') || line.includes('URBIS IV') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('JAIME MENEZES') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
-            resultado7.push(line) ;
-        } 
-        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('BOSQUE')|| line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
+
+        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('BOSQUE')|| line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('CAMPO ALEGRE') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("SANTA TEREZINHA - DD") || line.includes("LESSA") || line.includes("VARGINHA") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
             resultado8.push(line);
         }
         else if (line.includes('SANTO ANTONIO') || line.includes('SARANDY') || line.includes('SANTO ANTÔNIO')) {
