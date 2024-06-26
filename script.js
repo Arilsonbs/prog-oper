@@ -299,10 +299,10 @@ function filtrarLinhas() {
         else if (line.includes('JANGADA') ||  line.includes('CARIRI') || line.includes('MARIO CRUZ') || line.includes('PATRICIO DOREA') || line.includes('AGOSTINHO AMARAL') || line.includes('PENAO') || line.includes('VIVENDA DO PASSE') || line.includes('URBIS-SSP') || line.includes('CENTRO-SSP') || line.includes('CENTRO - SSP')|| line.includes('SÃO ROQUE') || line.includes('ARAÇATIBA') || line.includes('ARACATIBA') || line.includes('JULIO SILVA') || line.includes('AGOSTINHO DO AMARAL') || line.includes('BRASILIA') || line.includes('FAZENDA CONCEICAO') || line.includes('FAZENDA CONCEIÇÃO') || line.includes('JAIME MENEZES') || line.includes('FAZENDA PARÁ') || line.includes('HUMILDES') || line.includes('MALHADA') || line.includes('ALEGRE') || line.includes('PENÃO') || line.includes('IRMÃ DULCE') || line.includes('CURRALINHO') || line.includes('I ETAPA') || line.includes('II ETAPA') || line.includes('III ETAPA') || line.includes('IV ETAPA')) {
             resultado7.push(line) ;
         } 
-        else if (line.includes('OURO NEGRO') || line.includes('URBIS I') || line.includes('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
+        else if (line.includes('OURO NEGRO') || line.includes ===('URBIS I') || line.includes===('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
             resultado4.push(line);
         }
-        else if (line.includes('MALEMBA') || line.includes('URBIS II') || line.includes('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes('BAIRRO DA PAZ')) {
+        else if (line.includes('MALEMBA') || line.includes ===('URBIS II') || line.includes===('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes('BAIRRO DA PAZ')) {
             resultado2.push(line);
         }
         else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
