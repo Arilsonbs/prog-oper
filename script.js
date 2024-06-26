@@ -316,7 +316,7 @@ function filtrarLinhas() {
             resultado6.push(line);
         }
 
-        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('BOSQUE')|| line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('CAMPO ALEGRE') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("SANTA TEREZINHA - DD") || line.includes("LESSA") || line.includes("VARGINHA") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
+        else if (line.includes('CENTRO-DD') || line.includes("NOVA DIAS D' ÁVILA") || line.includes("NOVA DIAS DAVILA") || line.includes("GARCIA D ÁVILA") || line.includes("IMBASSAY") || line.includes("GARCIA D'AVILA") || line.includes("CENTRO - DD")|| line.includes('GENARO') || line.includes('IMBASSAI') || line.includes('BOSQUE')|| line.includes('ISAURA') || line.includes('PARQUE PETROPOLIS') || line.includes('CONCORDIA') || line.includes('CAMPO ALEGRE') || line.includes('JARDIM ALVORADA') || line.includes('ENTRONCAMENTO-DD') || line.includes("NOVA DIAS D'AVILA") || line.includes("CRISTO REI") || line.includes("SANTA TEREZINHA - DD") || line.includes("LESSA") || line.includes("VARGINHA") || line.includes("NOVA DIAS D'ÁVILA")|| line.includes('SANTA HELENA-DD')) {
             resultado8.push(line);
         }
         else if (line.includes('SANTO ANTONIO') || line.includes('SARANDY') || line.includes('SANTO ANTÔNIO')) {
