@@ -162,7 +162,7 @@ footer{
     padding-top: 10px;
     padding-left: 10px;
     font-size: 16px;
-    
+    border-radius: 10px;
 }
 .comparar-prot button{
     margin: 0 auto;

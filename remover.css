@@ -146,22 +146,26 @@ footer{
    
 }
 .remover-prot p{
+    margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 40px;
-    width: 70%;
-    margin: 0 auto;
-    text-align: justify;
+    width: 60%;
+    text-align: left;
+    
+   
     
 }
 
 .remover textarea{
-    width: 70%;
-    min-height: 600px;
+    width: 65%;
+    min-height: 450px;
     resize: none;
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 10px;
     font-size: 16px;
+    margin: 0 auto;
+    border-radius: 10px;
     
 }
 .remover-prot button{
