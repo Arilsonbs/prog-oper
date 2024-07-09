@@ -302,7 +302,7 @@ function filtrarLinhas() {
         else if (line.includes('OURO NEGRO') || line.includes ('URBISI') || line.includes ('JABEQUARA DA AREIA') || line.includes('MASSUIM') || line.includes('JABEQUARA') || line.includes('JABEQUARA DA AREIA') || line.includes('PINDOBA') || line.includes('MARACANGALHA') || line.includes('CINCO RIOS')) {
             resultado4.push(line);
         }
-        else if (line.includes('MALEMBA') || line.includes ('URBIS II') || line.includes ('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes('BAIRRO DA PAZ')) {
+        else if (line.includes('MALEMBA') || line.includes ('URBIS II') || line.includes ('AREIA') || line.includes('PASSE') || line.includes('PASSÉ') || line.includes ('MALEMBÁ')  || line.includes('BAIRRO DA PAZ')) {
             resultado2.push(line);
         }
         else if (line.includes('CENTRO-CA') || line.includes('TRIANGULO') || line.includes('TRIÂNGULO') || line.includes('CENTRO - CA')) {
