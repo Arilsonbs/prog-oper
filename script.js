@@ -383,7 +383,6 @@ function limparTextareas() {
     document.getElementById('outputTextarea11').value = '';
     
 }
-<<<<<<< HEAD
 
 // Definir os dias (21 a 31 e depois 1 a 20)
 const ordemDias = [...Array.from({length: 11}, (_, i) => i + 21), ...Array.from({length: 20}, (_, i) => i + 1)];
@@ -545,5 +544,3 @@ carregarCampos();
  
 // Salvar os campos quando o conteúdo mudar
 window.addEventListener('beforeunload', salvarCampos);
-=======
->>>>>>> origin/main
