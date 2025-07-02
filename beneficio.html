@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="remover.css">
+    <link rel="stylesheet" href="beneficio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" type="imagex/png" href="logo-reduzida.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Seven - Removedor de Protocolo</title>
+    <title>Seven - Alterador de Protocolo</title>
 </head>
 <body>
 
@@ -20,12 +20,12 @@
                     <img src="Seven.png" alt="">
                 </div><!--logo-->
                 <div class="menu">
-                    <a href="Alterar.html">Alterar Protocolo</a>
+                    <a  href="Alterar.html">Alterar Protocolo</a>
                     <a href="roteirizador.html">Roteirizador</a>
                     <a href="links.html">Links</a>
-                    <a style="color: #59cbe8;" href="">Removedor de Protocolo</a>
+                    <a href="remover.html">Removedor de Protocolo</a>
                     <a href="comparar.html">Comparador de Protocolo</a>
-                    <a href="beneficio.html">Benefício de Condução</a>
+                    <a style="color: #59cbe8;" href="">Benefício de Condução</a>
                 </div><!--menu-->
 
                 <div class="menu-mobile">
@@ -34,9 +34,10 @@
                         <a href="Alterar.html">Alterar Protocolo</a>
                         <a href="roteirizador.html">Roteirizador</a>
                         <a href="links.html">Links</a>
-                        <a href="">Removedor de Protocolo</a>
+                        <a href="remover.html">Removedor de Protocolo</a>
                         <a href="comparar.html">Comparador de Protocolo</a>
-                        <a href="beneficio.html">Benefício de Condução</a>
+                        <a style="color: #59cbe8;" href="">Benefício de Condução</a>
+
 
                     </div><!--mobile-->
 
@@ -49,7 +50,7 @@
         <div class="center">
             <div class="contra-capa">
                 <div class="fundo-preto"> 
-                    <p>Este sistema visa remover informações que não são necessárias para o cumprimento de determinada tarefa, aqui será mantido apenas o número do protocolo buscando facilitar a realização da atividade.</p>
+                    <p>Esta aplicação verifica se o colaborador tem direito ao benefício de condução, caso o nome do técnico apareça 15 vezes ou mais, o mesmo está apto para receber o benefício.</p>
                 </div><!--fundo-preto-->
                 <div class="banner">
                 </div><!--banner-->
@@ -57,24 +58,40 @@
 
         </div><!--center-->
     </section><!--banner-central-->
+    <br><br><br><br> <br><br>
 
-    <section class="remover">
-        <div class="centro">
-            <div class="remover-prot">
-                <h2>Removedor de Protocolos</h2>
-                <p><b> Observação 01: </b> Esse método serve para remover os protocolos vindo de todo local, bastando ter a sequência "Protocolo XXXXXX"; <br>
-                    Copie os protocolos, como era feito com as planilhas do excel; <br>
-                    Cole os protocolos no local indicado;<br>
-                    <b> Observação 02: </b> Ao clicar no botão, os protocolos já são copiados para área de transferência, bastando apenas colar no local desejado. </p>
-
-                <textarea id="inputTexto" placeholder="Cole os protocolos aqui" name="" id=""></textarea>
-                <button id="botaoExtrair" onclick="extrairEcopiarProtocolos()">Remover informações e copiar</button>
-                <div id="resultado"></div>
-                
-            </div><!--remover-prot-->
-        </div>
-
-    </section><!--remover-->
+<h2>Datas trabalhadas</h2>
+ <br><br>
+  <div class="container" id="inputsContainer">
+<!-- Os 31 textareas serão gerados via JavaScript -->
+</div>
+ 
+  <button onclick="contarNomes()">Contar Nomes</button>
+ 
+  <!-- Botões de ordenação -->
+<div class="sort-container">
+<button onclick="ordenarTabela('nome', 'asc')">Ordenar por Nome (Crescente)</button>
+<button onclick="ordenarTabela('nome', 'desc')">Ordenar por Nome (Decrescente)</button>
+<button onclick="ordenarTabela('quantidade', 'asc')">Ordenar por Quantidade (Crescente)</button>
+<button onclick="ordenarTabela('quantidade', 'desc')">Ordenar por Quantidade (Decrescente)</button>
+</div>
+ 
+  <table id="resultado" style="display: none;">
+<thead>
+<tr>
+<th>Nome</th>
+<th>Quantidade</th>
+<th>Benefício de Condução</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+ 
+  <button id="downloadButton" style="display: none;" onclick="baixarExcel()">Baixar Resultado (Excel)</button>
+ 
+  <button id="clearButton" onclick="limparCampos()">Limpar Todos os Campos</button>
+ 
+  <script src="script.js"></script> <!-- Link para o JavaScript -->
 
     <footer>
         <div class="center">   

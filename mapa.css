@@ -75,7 +75,6 @@
 }
 
 
-
 /*section 1: banner */
 
 .banner{
@@ -110,8 +109,13 @@
     
 }
 
-#resultado{
-    display: none;
+.cega{
+    width: 100%;
+    background-color: green;
+    height: 200px;
+}
+.teste{
+    padding-top: 80px;
 }
 /*footer*/
 
@@ -119,6 +123,7 @@ footer{
     background: var(--cp);
     border-top: 1px solid black;
     width: 100%;
+    padding-top: 80px;
    
     }
 
@@ -135,108 +140,6 @@ footer{
     font-size: 12px;
     
 }
-
-/*section 2: alterar protocolo */
-
-
-.remover-prot{
-    padding-top: 100px;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    width: 80%;
-   
-}
-.remover-prot p{
-    padding-top: 20px;
-    padding-bottom: 40px;
-    width: 60%;
-    text-align: justify;
-    margin: 0 auto;
-    
-   
-    
-}
-
-.remover textarea{
-    width: 65%;
-    min-height: 450px;
-    resize: none;
-    border: 1px solid black;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 16px;
-    margin: 0 auto;
-    border-radius: 10px;
-    
-}
-.remover-prot button{
-    margin: 0 auto;
-    margin-top: 20px;
-    display: block;
-    height: 50px;
-    width: 250px;
-    background-color:var(--cp);;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 2px 3px grey ;
-    border: none;
-    
-}
-
-@media screen and (max-width:1150px){
-    .menu{
-        display: none;
-    }
-
-    .menu-mobile{
-        display: block;
-        text-align: right;
-        
-    }
-
-    .mobile{
-        position: relative;
-        top: 0;
-        left: 0;
-        background-color: white;
-        width: 100%;
-        padding: 20px 0;
-        z-index: 3;
-        border: 2px solid black;
-        opacity: 0;
-        transition: 1s;
-        
-    }
-
-    .show{
-        opacity: 1;
-    }
-
-    .hide{
-        opacity: 0;
-    }
-    .mobile a{
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        color: black;
-        padding-bottom: 10px;
-    }
-
-    .mobile a:hover{
-        border-bottom: 2px solid black;
-        width: 80%;
-    }
-}
-
-
-    
-    
-    
 
 
 @media screen and (max-width:1450px){

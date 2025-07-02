@@ -383,3 +383,164 @@ function limparTextareas() {
     document.getElementById('outputTextarea11').value = '';
     
 }
+
+// Definir os dias (21 a 31 e depois 1 a 20)
+const ordemDias = [...Array.from({length: 11}, (_, i) => i + 21), ...Array.from({length: 20}, (_, i) => i + 1)];
+const container = document.getElementById('inputsContainer');
+ 
+// Função para preencher os campos com os dados do localStorage (se existirem)
+function carregarCampos() {
+  ordemDias.forEach(dia => {
+    const div = document.createElement('div');
+    div.className = 'day-box';
+    div.innerHTML = `
+<h3>Dia ${dia}</h3>
+<textarea id="dia${dia}" placeholder="Digite nomes separados por linha"></textarea>
+    `;
+    container.appendChild(div);
+ 
+    // Carregar os dados salvos no localStorage para cada textarea
+    const savedData = localStorage.getItem(`dia${dia}`);
+    if (savedData) {
+      document.getElementById(`dia${dia}`).value = savedData;
+    }
+  });
+}
+ 
+// Função para salvar os dados no localStorage
+function salvarCampos() {
+  ordemDias.forEach(dia => {
+    const textarea = document.getElementById(`dia${dia}`);
+    localStorage.setItem(`dia${dia}`, textarea.value);
+  });
+}
+ 
+// Função para contar os nomes
+function contarNomes() {
+  const contagem = {};
+ 
+  ordemDias.forEach(dia => {
+    const textarea = document.getElementById(`dia${dia}`);
+    const linhas = textarea.value.split(/\r?\n|,/); // separa por quebras de linha ou vírgula
+ 
+    for (let linha of linhas) {
+      linha = linha.trim();
+      if (linha === "") continue;
+ 
+      // Agora consideramos os delimitadores " - ", " / " e " ("
+      const nomes = linha.split(/[-\/(]/); // Divida por "-" , "/" ou "("
+ 
+      // Contar apenas o primeiro nome antes do delimitador
+      const nomePrincipal = nomes[0].trim(); // Pegamos o primeiro nome
+ 
+      if (nomePrincipal !== "") {
+        if (nomePrincipal in contagem) {
+          contagem[nomePrincipal]++;
+        } else {
+          contagem[nomePrincipal] = 1;
+        }
+      }
+    }
+  });
+ 
+  const tbody = document.querySelector("#resultado tbody");
+  tbody.innerHTML = "";
+ 
+  // Atualizando a tabela com a contagem
+  for (const [nome, qtd] of Object.entries(contagem)) {
+    const tr = document.createElement("tr");
+ 
+    // Verificar o benefício de condução
+    const beneficioClass = qtd >= 15 ? "apto" : "inapto";
+    const beneficioTexto = qtd >= 15 ? "apto para receber benefício" : "inapto para receber benefício";
+ 
+    tr.innerHTML = `
+<td>${nome}</td>
+<td>${qtd}</td>
+<td class="benefit ${beneficioClass}">${beneficioTexto}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+ 
+  // Exibe a tabela e o botão de download
+  document.getElementById("resultado").style.display = "table";
+  document.getElementById("downloadButton").style.display = "inline-block"; // Exibe o botão de download
+}
+ 
+// Função para baixar o arquivo Excel
+function baixarExcel() {
+  const contagem = {};
+  ordemDias.forEach(dia => {
+    const textarea = document.getElementById(`dia${dia}`);
+    const linhas = textarea.value.split(/\r?\n|,/);
+ 
+    for (let linha of linhas) {
+      linha = linha.trim();
+      if (linha === "") continue;
+ 
+      // Agora consideramos os delimitadores " - ", " / " e " ("
+      const nomes = linha.split(/[-\/(]/); // Divida por "-" , "/" ou "("
+      // Contar apenas o primeiro nome antes do delimitador
+      const nomePrincipal = nomes[0].trim(); // Pegamos o primeiro nome
+ 
+      if (nomePrincipal !== "") {
+        if (nomePrincipal in contagem) {
+          contagem[nomePrincipal]++;
+        } else {
+          contagem[nomePrincipal] = 1;
+        }
+      }
+    }
+  });
+ 
+  // Preparar dados para exportar para Excel
+  const dados = [["Nome", "Quantidade", "Benefício de Condução"]]; // Cabeçalho da tabela
+ 
+  for (const [nome, qtd] of Object.entries(contagem)) {
+    const beneficioTexto = qtd >= 15 ? "apto para receber benefício" : "inapto para receber benefício";
+    dados.push([nome, qtd, beneficioTexto]); // Adiciona os dados à matriz
+  }
+ 
+  // Criação da planilha e exportação com SheetJS
+  const ws = XLSX.utils.aoa_to_sheet(dados);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "Contagem de Nomes");
+ 
+  // Gerar o arquivo Excel
+  XLSX.writeFile(wb, "resultado.xlsx");
+}
+ 
+// Função para limpar todos os campos
+function limparCampos() {
+  ordemDias.forEach(dia => {
+    document.getElementById(`dia${dia}`).value = ""; // Limpar os campos
+    localStorage.removeItem(`dia${dia}`); // Remover dados do localStorage
+  });
+}
+ 
+// Função para ordenar a tabela
+function ordenarTabela(campo, ordem) {
+  const rows = Array.from(document.querySelectorAll("#resultado tbody tr"));
+  const index = campo === 'quantidade' ? 1 : 0; // 0 = Nome, 1 = Quantidade
+  // Ordenar as linhas com base no campo e ordem
+  rows.sort((a, b) => {
+    const aVal = a.cells[index].textContent.trim();
+    const bVal = b.cells[index].textContent.trim();
+ 
+    if (campo === 'quantidade') {
+      return ordem === 'asc' ? aVal - bVal : bVal - aVal;
+    } else {
+      return ordem === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+    }
+  });
+ 
+  // Reordenar as linhas no DOM
+  const tbody = document.querySelector("#resultado tbody");
+  rows.forEach(row => tbody.appendChild(row));
+}
+ 
+// Carregar os campos ao iniciar a página
+carregarCampos();
+ 
+// Salvar os campos quando o conteúdo mudar
+window.addEventListener('beforeunload', salvarCampos);

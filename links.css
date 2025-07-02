@@ -223,7 +223,8 @@ footer{
 }
 
 
-@media screen and (max-width:1150px){
+
+@media screen and (max-width:1450px){
     .menu{
         display: none;
     }
@@ -269,38 +270,6 @@ footer{
     }
 }
 
-@media screen and (max-width:980px) {
-    
-    .planilhas a , .outroslinks a{
-        width: 90%;
-        margin-bottom: 15px;
-    }
-    
-    .outroslinks h2{
-        color: black;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .linkgeral{
-        display: block;
-
-    }
-
-    .planilhas , .outroslinks{
-        width: 100%;
-    }
-
-    .planilhas a , .outroslinks a{
-        width: 75%;
-        margin-bottom: 15px;
-    }
-    .outroslinks h2{
-        padding-top: 20PX;
-        color: white;
-    }
-    
-}
 
     
     
