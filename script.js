@@ -428,7 +428,7 @@ function contarNomes() {
       if (linha === "") continue;
  
       // Agora consideramos os delimitadores " - ", " / " e " ("
-      const nomes = linha.split(/[-\/(]/); // Divida por "-" , "/" ou "("
+      const nomes = linha.split(/[-\/–\()]/); // Divida por "-" , "/" ou "–"
  
       // Contar apenas o primeiro nome antes do delimitador
       const nomePrincipal = nomes[0].trim(); // Pegamos o primeiro nome
